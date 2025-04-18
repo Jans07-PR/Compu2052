@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Videojuegos - GameBase{% endblock %}
+
+{% block content %}
+<h2>Videojuegos disponibles</h2>
+<table border="1">
+    <tr>
+        <th>Título</th>
+        <th>Plataforma</th>
+        <th>Género</th>
+    </tr>
+    {% for juego in juegos %}
+    <tr>
+        <td>{{ juego.titulo }}</td>
+        <td>{{ juego.plataforma }}</td>
+        <td>{{ juego.genero }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

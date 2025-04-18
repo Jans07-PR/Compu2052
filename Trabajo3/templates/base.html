@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}GameBase{% endblock %}</title>
+</head>
+<style>
+    h1{
+          text-align: center;  
+    }
+
+    body{
+        background-image: url(https://img.freepik.com/free-vector/futuristic-black-yellow-gaming-background_331749-887.jpg?t=st=1744942074~exp=1744945674~hmac=7e43f0da01a2c0f886e3fb0ca70e6bdbe56b12ddbed4b1613d6ee47837fb996e&w=1800);
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    a{
+        color: yellow;
+    }
+    p{
+        color: yellow;
+    }
+    h2{
+        color: yellow
+    }
+    table{
+        background-color: yellow;
+    }
+
+</style>
+<body>
+    
+        <h1 style="color: yellow;">🎮 GameBase</h1>
+        <nav>
+            <a href="/">Inicio</a> |
+            <a href="/juegos">Videojuegos</a> |
+        </nav>
+        <hr>
+    
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+
+        <hr>
+        <p>Creado con Flask + Jinja2 ·</p>
+ 
+</body>
+</html>
