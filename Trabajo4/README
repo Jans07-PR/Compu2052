@@ -1,0 +1,5 @@
+Formulario	                Campos	                    Validaciones necesarias
+#---------------------------------------------------------------------------------------------------------------------------
+Registro Usuario	Nombre, Correo, Contraseña	    Obligatorios, longitud mínima, formato email, contraseña segura
+
+Inicio Sesión	    Correo, Contraseña	            Obligatorios, validación contra base de datos
