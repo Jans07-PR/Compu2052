@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.container {
+    width: 300px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: blue;
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: violet;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para los errores */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Estilo para el botón de envío */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    background-color: darkorange;
+    color: yellow;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+body{
+    background-image: url(img/sonic.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

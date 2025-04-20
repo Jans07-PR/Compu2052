@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div>
+            {{ form.nombre.label }}<br>
+            {{ form.nombre(size=30) }}<br>
+            {% for error in form.nombre.errors %}
+                <span style="color: red;">{{ error }}</span><br>
+            {% endfor %}
+        </div>
+
+        <div>
+            {{ form.correo.label }}<br>
+            {{ form.correo(size=30) }}<br>
+            {% for error in form.correo.errors %}
+                <span style="color: red;">{{ error }}</span><br>
+            {% endfor %}
+        </div>
+
+        <div>
+            {{ form.contraseña.label }}<br>
+            {{ form.contraseña(size=30) }}<br>
+            {% for error in form.contraseña.errors %}
+                <span style="color: red;">{{ error }}</span><br>
+            {% endfor %}
+        </div>
+
+        <div>
+            {{ form.enviar() }}
+        </div>
+    </form>
+</body>
+</html>
