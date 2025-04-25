@@ -1,0 +1,16 @@
+h1{
+    color: yellow;
+    border-color: orange;
+    text-align: center;
+}
+
+body{
+    background-image: url(img/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div{
+    text-align: center;
+    color: yellow;
+}
