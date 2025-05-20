@@ -1,0 +1,4 @@
+### Obtener tickets por ID
+
+GET http://localhost:5000/tickets/21
+Content-Type: application/json

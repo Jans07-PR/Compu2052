@@ -1,0 +1,11 @@
+### Crear un nuevo ticket (POST)
+
+POST http://localhost:5000/tickets
+Content-Type: application/json
+
+{
+  "titulo": "Flask Avanzado",
+  "asunto": "Ejemplo",
+  "descripcion": "Ticket intensivo de desarrollo con Flask",
+  "tecnico_id": 1
+}

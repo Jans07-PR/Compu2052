@@ -1,0 +1,12 @@
+### Editar un ticket
+
+# Simular POST con nuevos datos del ticket
+
+PUT http://localhost:5000/tickets/21
+Content-Type: application/json
+
+{
+  "titulo": "Ticket actualizado",
+  "asunto": "Asunto actualizado",
+  "descripcion": "Nueva descripción actualizada"
+}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}{{ editar and "Edit Ticket" or "New Ticket" }}{% endblock %}
+{% block content %}
+<h2 class="mb-4">{{ editar and "Edit Ticket" or "New Ticket" }}</h2>
+
+<form method="POST" action="">
+  {{ form.hidden_tag() }}
+
+  <!-- Ticket Asunto -->
+  <div class="mb-3">
+    {{ form.asunto.label(class="form-label") }}
+    {{ form.asunto(class="form-control", placeholder="Enter ticket subject") }}
+  </div>
+
+  <!-- Ticket Description -->
+  <div class="mb-3">
+    {{ form.descripcion.label(class="form-label") }}
+    {{ form.descripcion(class="form-control", placeholder="Enter ticket description") }}
+  </div>
+
+  <!-- Ticket Prioridad -->
+  <div class="mb-3">
+    {{ form.prioridad.label(class="form-label") }}
+    {{ form.prioridad(class="form-select") }}
+  </div>
+
+  <!-- Submit Button -->
+  <div class="mb-3">
+    {{ form.submit(class="btn btn-primary", value=(editar and "Actualizar" or "Crear")) }}
+  </div>
+</form>
+{% endblock %}
